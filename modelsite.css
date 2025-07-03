@@ -1,0 +1,324 @@
+@font-face {
+  font-family: robotoThin;
+  src: url(/fonts/Roboto_SemiCondensed-Light.ttf);
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: robotoThin2;
+  src: url(fonts/Roboto_SemiCondensed-Bold.ttf);
+  font-style: bold;
+}
+
+@font-face {
+  font-family: star;
+  src: url(/fonts/STAR7.ttf);
+} 
+
+
+body {
+  font-family: robotoThin;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+.threejs {
+  grid-area: main;
+  min-width: 0;
+ 
+ 
+}
+
+.display-box {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: [first] 1.2fr [line2] 2fr [line3] 1.2fr [end];
+  grid-template-rows: [first] 50px [line2] auto [line3] 1fr [line4] 1fr [line5] auto [end];
+  grid-template-areas: 
+  ". top top"
+  "secondary secondary secondary"
+  "gap main tertiary"
+  "gap main tertiary"
+  "gap details details";
+}
+
+#model-name {
+  font-family: robotoThin2;
+  font-size: x-large;
+  grid-area: top;
+  align-self: center;
+}
+
+.field-size {
+}
+
+.field-format {
+
+ 
+}
+
+.field-faces {
+
+
+}
+
+.field-vertices {
+
+
+}
+
+.field {
+  display:block;
+  width : 80px;
+  font-weight: normal;
+  background-color: rgb(91, 33, 250);
+  border-radius: 4px;
+  line-height: 110%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.row {
+ 
+}
+
+.model-details {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+}
+
+
+
+#modelDetails {
+  grid-area: details;
+}
+
+#displayed_faces {
+ 
+}
+
+.fieldvalue {
+  font-weight: normal;
+  padding-left: 10px;
+  align-items: end;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.suggested-box {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  grid-area: secondary;
+  justify-content:space-evenly;
+}
+
+.suggested-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.suggested-box div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding-top: 0;
+}
+
+.suggested-box div span {
+  align-self: center;
+}
+
+#suggested-box-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: robotoThin2;
+  font-size:larger;
+}
+
+
+
+
+.gap {
+  grid-area: gap;
+
+}
+
+.sidebar-image-text {
+  align-content: center;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0px;
+  background-color: rgb(91, 33, 250);
+  overflow: hidden;
+  margin: 0px;
+  height: 40px;
+  justify-content: center;
+}
+
+#nav-logo {
+  font-family: star;
+  font-size:38px;
+  color: white; 
+  padding-left: 1%;
+  align-self: center;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: [name] 1.2fr [search] 2fr [models] 0.3fr [textures] 0.3fr [animations] 0.3fr [loginandaccount] 0.3fr [end];
+  grid-template-areas: 
+  "name search models textures animations loginandaccount";
+  padding-bottom: 0px;
+  padding-top: px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  margin: 0px;
+  height: 35px;
+}
+
+#nav-text {
+  display:flex;
+  flex-direction: row; 
+  align-items: center;
+  font-family: star;
+  font-size:20px;
+  color: rgb(91, 33, 250);
+  padding-left: 3%;
+  grid-area: name;
+}
+
+#nav-text2 {
+  font-family: robotoThin;
+  font-size:15px;
+  color: rgb(91, 33, 250);
+  padding-left: 7%;
+  white-space: nowrap;
+}
+ 
+.searchbardiv {
+  display: flex;
+  flex-direction: row;
+  grid-area:search;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.searchbar {
+ width: 100%;
+}
+
+.searchbar input[type="text"] {
+  font-family: robotoThin;
+  font-size: 16px;
+  height: 32px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+label[for="search"]
+{
+    display:none;
+}
+
+.nav-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+ 
+}
+
+#nav-models {
+grid-area: models;
+justify-self: center;
+}
+
+#nav-textures{
+grid-area: textures;
+justify-self: center;
+}
+
+#nav-animations {
+grid-area: animations;
+
+justify-self: center;
+}
+
+
+#nav-loginandaccount {
+grid-area: loginandaccount;
+display:flex;
+flex-direction: row;
+}
+
+#nav-login {
+  padding-left: 15px;
+}
+
+#dividing-line {
+  padding-top: 0;
+  margin: 0px;
+  height: 2px;
+  background-color: rgb(91, 33, 250);
+}
+
+.suggested-box span {
+  align-self: center;
+  
+}
+
+.right-sidebar {
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  grid-area: tertiary;
+  justify-content: start;
+  align-items: start;
+}
+
+.right-sidebar div button{
+  background-color: rgb(66, 11, 218); 
+  width: 200px;
+  height: 80px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-family: robotoThin2;
+  font-style: bold;
+}

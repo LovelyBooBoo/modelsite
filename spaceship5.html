@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My first three.js app but it's not appearing</title>
+   	<link rel="stylesheet" href="/modelsite.css">
+  	 <div class="nav-bar">
+		<p id="nav-logo">M</p>
+  	 </div>
+	 <div class="nav-menu">
+			<div id="nav-text">
+				Modlr<span id="nav-text2">free 3D models</span>
+			</div>
+			<div class="searchbardiv">
+				<form class="searchbar">
+					<label for="search"></label>
+					<input type="text" id="search" name ="search">
+				</form>
+				<img id="search-icon" src="assets/icons/Search-01.png">
+			</div>
+			<div class="nav-categories" id="nav-models">
+				3D Models
+			</div>
+			<div class="nav-categories" id="nav-textures">
+				Textures
+			</div>
+			<div class="nav-categories" id="nav-animations">
+				Animations
+			</div>
+			<div id="nav-loginandaccount">
+				<div class="nav-categories" id="nav-account">
+					Account
+				</div>
+				<div class="nav-categories" id="nav-login">
+					Login
+				</div>
+			</div>
+		</div>
+		<div id="dividing-line">
+
+		</div>
+  </head>
+  <body>
+	<span id="suggested-box-text">More from the collection</span>
+	<div class="suggested-box" id="suggested-box">
+			
+	</div>
+	<div class="display-box">
+		<div id="model-name"></span><span class="value" id="displayed_name">
+		
+		</div>
+		<div class="gap">
+			
+		</div>
+		<canvas class="threejs"></canvas>
+		<div class="right-sidebar" id="right-sidebar">
+		</div>
+
+		
+    	<div id="modelDetails">
+			<ul class="model-details">
+				<li class="field-size row">
+					<span class="field">Size</span>
+					<span class="fieldvalue" id="displayed_size"></span>
+				</li>
+				<li class="field-format row">
+					<span class="field">Format</span>
+					<span class="fieldvalue" id="displayed_format"></span>
+				</li>
+				<li class="field-faces row">
+					<span class="field">
+						<img id="faces-icon" src="/assets/icons/faces_icon.svg" width="15" height="15"> Faces
+					</span>
+					<span class="fieldvalue" id="displayed_faces"></span>
+				</li>
+				<li class="field-vertices row">
+					<span class="field">
+						<img id="vertices-icon" src="/assets/icons/vertices_icon.svg" width="15" height="15"> Vertices
+					</span>
+					<span class="fieldvalue" id="displayed_vertices"></span>
+				</li>
+			</ul>	
+		</div>
+    	<div id="description">
+		</div>
+		</div>
+    </div>
+    <script type="module" src="/modelsite.js"></script>
+	 <script type="module" src="/productManager.js"></script>
+  </body>
+</html>
